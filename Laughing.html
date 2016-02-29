@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+body {
+  perspective: 800px;
+  font-family: sans-serif;
+}
+
+#Funny_Box {
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  padding: 40px;
+  height: 512px;
+  width: 512px;
+  transform: rotateX(0) rotateY(0) rotateZ(0) scaleX(1) scaleY(1) ;
+  transform-style: preserve-3d;
+  animation: rotatorY 5s infinite linear;
+}
+#Happy_Outline {
+  position: absolute;
+  height: 1024px;
+  width: 1138px;
+  backface-visibility: visible;
+  transform: translateZ(10px);
+}
+#Happy_Text {
+  position: absolute;
+  height: 1024px;
+  width: 1024px;
+  backface-visibility: visible;
+  transform: translateZ(-1px);
+  animation: spin 10s infinite linear;
+}
+@keyframes spin {
+  0%   { transform: rotateZ(0); }
+  100% { transform: rotateZ(360deg) ;}
+}
+@keyframes rotatorY {
+  0%   { transform: rotateY(-30deg) scaleX(0.5) scaleY(0.5) translateY(-256px) translateX(-256px) ; }
+  50%  { transform: rotateY(30deg) scaleX(0.5) scaleY(0.5) translateY(-256px) translateX(-256px) ; }
+  100% { transform: rotateY(-30deg) scaleX(0.5) scaleY(0.5) translateY(-256px) translateX(-256px) ; }
+}
+</style>
+</head>
+<body>
+<!-- div style="background: #933 url('Chandra Naalar transparency.png') no-repeat center; padding: 250px; padding-top: 550px;"-->
+<div id="Funny_Box" style="margin-top: 0px;">
+  <img src="laughing_man_text_Centered.png" id="Happy_Text">
+  <img src="laughing_man_big_2_wo_text.png" id="Happy_Outline">
+</div>
+
+<!-- img style="margin-right: auto; margin-left: auto; padding-top: 10px;" src="1082x788_Cannoneer.png" /-->
+<!-- /div -->
+</body>
+</html>
