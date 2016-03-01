@@ -11,3 +11,5 @@ Do I have to tell SourceForge to figure out that I've edited the files, or will 
 Do I have to tell SourceForge to make a new branch when I start editing the local copy of files, or will it automatically make a new branch when it notices there's an edited file?
 
 Let's find out.
+
+I used the Naked-Snake branch to add some fonts to be used later.
